@@ -1824,6 +1824,22 @@ img {
 .about__buttons .button:hover {
   background-color: #005fcc;
 }
+/* ================== Fix Button Text Color ================== */
+.button,
+.about__buttons .button,
+.button--flex {
+  color: #ffffff !important;
+  background-color: var(--first-color) !important;
+  border: none;
+}
+
+.button:hover,
+.about__buttons .button:hover {
+  background-color: #0056d6 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 10px rgba(0, 86, 214, 0.3);
+}
+
 
 
 
