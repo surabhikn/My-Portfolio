@@ -115,6 +115,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
 }
 
 h1,
@@ -1612,8 +1613,60 @@ img {
 .about__data p {
   margin-bottom: 1rem;
 }
+/* About Section - Consistent Font & Layout */
+.about__description p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #444;
+  text-align: justify;
+  font-family: inherit; /* Ensures it matches the rest of the site */
+}
 
+.about__description strong {
+  color: var(--first-color, #0078ff);
+  font-weight: 600;
+}
 
+.about__data {
+  max-width: 600px;
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.about__info-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--first-color, #0078ff);
+}
+
+.about__info-name {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.about__buttons .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--first-color, #0078ff);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  transition: 0.3s;
+}
+
+.about__buttons .button:hover {
+  background-color: #005fcc;
+}
 
 
 
