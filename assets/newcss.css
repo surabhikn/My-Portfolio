@@ -1793,6 +1793,37 @@ img {
   font-family: var(--body-font);
   color: var(--text-color);
 }
+/* ================== Button Consistency ================== */
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  font-family: var(--body-font);
+}
+
+.button:hover {
+  background-color: #005fcc; /* Slightly darker shade on hover */
+}
+
+.button__icon {
+  font-size: 1.2rem;
+}
+
+/* Make sure About section button uses the same */
+.about__buttons .button {
+  background-color: var(--first-color);
+}
+
+.about__buttons .button:hover {
+  background-color: #005fcc;
+}
 
 
 
