@@ -9,21 +9,7 @@
   <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/newcss.css" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
-  <!-- Typing Animation -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  const typed = new Typed(".typing", {
-    strings: ["ECE Graduate", "Software Developer", "Web Enthusiast", "Tech Learner"],
-    typeSpeed: 80,
-    backSpeed: 50,
-    loop: true
-  });
-</script>
-
-<!-- Scroll Animations -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
 </head>
 
@@ -892,6 +878,30 @@
   <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
   <script src="assets/ptj.js"></script>
+  <!-- =============== JS Animations =============== -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  // Typing animation for subtitle
+  var typed = new Typed(".home__subtitle", {
+    strings: [
+      "ECE Graduate & Software Enthusiast",
+      "Software Developer",
+      "Tech Explorer & Problem Solver"
+    ],
+    typeSpeed: 70,
+    backSpeed: 40,
+    loop: true,
+  });
+
+  // Initialize scroll animation
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
 </body>
 
 </html>
