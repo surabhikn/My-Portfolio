@@ -1863,6 +1863,13 @@ img {
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 86, 214, 0.3);
 }
+.about__buttons .button {
+  color: #ffffff !important;
+}
+.about__buttons .button i {
+  color: #ffffff !important;
+}
+
 
 
 
