@@ -289,19 +289,21 @@ img {
 }
 
 .home__blob-img {
-  width: 180px;
+  width: 120%;
   height: auto;
   object-fit: cover;
   object-position: center;
-  transform: translate(40px, 20px);
+  transform: translate(15px, 25px);
+  border-radius: 50%;
 }
+
 @media screen and (max-width: 768px) {
   .home__blob {
     width: 220px;
   }
   .home__blob-img {
-    width: 140px;
-    transform: translate(30px, 15px);
+    width: 100%;
+    transform: translate(10px, 20px);
   }
 }
 
