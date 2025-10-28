@@ -68,6 +68,17 @@
     --smaller-font-size: 0.813rem;
   }
 }
+:root {
+  --header-height: 3rem;
+
+  /* ======= Font and Color Variables ======= */
+  --body-font: 'Poppins', sans-serif;
+  --title-font: 'Poppins', sans-serif;
+  --text-color: #333;
+  --first-color: #0078ff;
+  --background-color: #f9f9f9;
+}
+
 /*================= Variables Dark Theme ===============*/
 body.dark-theme {
   /*========= HSL Color mode =========*/
@@ -109,6 +120,25 @@ body.dark-theme {
 html {
   scroll-behavior: smooth;
 }
+/* ======= Global Typography ======= */
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font);
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+p {
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
+
 body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
@@ -1755,6 +1785,15 @@ img {
   align-items: center;
   gap: 2rem;
 }
+/* ================== About Section Font Consistency ================== */
+.about__description p,
+.about__info-title,
+.about__info-name,
+.about__buttons .button {
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
+
 
 
 
