@@ -275,11 +275,24 @@ img {
 }
 
 .home__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;  /* two equal columns */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+  .home__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home__blob {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 
 .home__social {
   display: grid;
@@ -295,56 +308,27 @@ img {
   color: var(--first-color-lighter);
 }
 
-/* .home__blob {
-  width: 260px;
-  fill: var(--first-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-} */
-/* .home__blob {
-  width: 250px;
-  fill: var(--first-color);
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home__blob-img {
-  width: 110%;
-  height: auto;
-  object-fit: cover;
-  object-position: top center;
-  clip-path: circle(45% at center);
-  transform: scale(1.1); /* Slight zoom to focus on face */
-}
-
-/* @media screen and (max-width: 768px) {
-  .home__blob {
-    width: 200px;
-  }
-  .home__blob-img {
-    clip-path: circle(45% at center);
-  }
-} */ */
-
 .home__blob {
   width: 260px;
-  align-self: center;
-  justify-self: center;     /* center the blob within its grid cell */
-  fill: var(--first-color);
+  height: 260px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #e3e8ff, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .home__blob-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  object-position: center;
-  clip-path: circle(50% at center); /* make it perfectly circular */
+  object-position: top center;
+  border-radius: 50%;
 }
+
 @media screen and (max-width: 768px) {
   .home__content {
     grid-template-columns: 1fr;   /* single column layout on small screens */
