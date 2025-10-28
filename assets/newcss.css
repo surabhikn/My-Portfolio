@@ -263,10 +263,17 @@ img {
 .home__container {
   gap: 1rem;
 }
-.home__content {
+/* .home__content {
   grid-template-columns: 0.5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
+} */
+.home__content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* Adjusted balance between text and image */
+  align-items: center;
+  padding-top: 3rem;
+  gap: 2rem;
 }
 
 .home__social {
@@ -283,22 +290,31 @@ img {
   color: var(--first-color-lighter);
 }
 
-.home__blob {
+/* .home__blob {
   width: 260px;
   fill: var(--first-color);
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+} */
+.home__blob {
+  width: 250px;
+  fill: var(--first-color);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home__blob-img {
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: auto;
   object-fit: cover;
   object-position: top center;
   clip-path: circle(45% at center);
-  transform: translate(0px, 0px);
+  transform: scale(1.1); /* Slight zoom to focus on face */
 }
 
 @media screen and (max-width: 768px) {
