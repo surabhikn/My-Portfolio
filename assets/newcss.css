@@ -260,19 +260,24 @@ img {
 }
 
 /*========HOME=============*/
-.home__container {
+/* .home__container {
   gap: 1rem;
-}
-/* .home__content {
-  grid-template-columns: 0.5fr 3fr;
-  padding-top: 3.5rem;
-  align-items: center;
 } */
+.home__container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;       /* center the container */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 2rem;
+  padding-top: 3rem;
+}
+
 .home__content {
   display: grid;
-  grid-template-columns: 1.2fr 1fr; /* Adjusted balance between text and image */
+  grid-template-columns: 1fr 1fr;  /* two equal columns */
   align-items: center;
-  padding-top: 3rem;
   gap: 2rem;
 }
 
@@ -298,7 +303,7 @@ img {
   align-items: center;
   margin: 0 auto;
 } */
-.home__blob {
+/* .home__blob {
   width: 250px;
   fill: var(--first-color);
   margin-left: auto;
@@ -317,15 +322,39 @@ img {
   transform: scale(1.1); /* Slight zoom to focus on face */
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .home__blob {
     width: 200px;
   }
   .home__blob-img {
     clip-path: circle(45% at center);
   }
+} */ */
+
+.home__blob {
+  width: 260px;
+  align-self: center;
+  justify-self: center;     /* center the blob within its grid cell */
+  fill: var(--first-color);
 }
 
+.home__blob-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  clip-path: circle(50% at center); /* make it perfectly circular */
+}
+@media screen and (max-width: 768px) {
+  .home__content {
+    grid-template-columns: 1fr;   /* single column layout on small screens */
+    text-align: center;
+  }
+  .home__blob {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
 
 .home__data {
   grid-column: 1/3;
