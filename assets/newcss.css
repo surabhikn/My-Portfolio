@@ -1372,6 +1372,54 @@ img {
     height: 250px;
   }
 }
+/* === Home Section Layout Fix === */
+.home__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Text section */
+.home__data {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Photo container */
+.home__blob {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Image styling */
+.home__blob-img {
+  width: 280px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .home__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home__blob {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .home__blob-img {
+    width: 250px;
+  }
+}
+
 
 
 
