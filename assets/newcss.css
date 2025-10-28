@@ -1419,6 +1419,61 @@ img {
     width: 250px;
   }
 }
+/* ================== HOME SECTION FIX ================== */
+.home__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.home__social {
+  order: 1;
+}
+
+.home__data {
+  order: 2;
+  flex: 1;
+  min-width: 300px;
+}
+
+.home__img {
+  order: 3;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home__blob {
+  width: 300px;
+  height: auto;
+}
+
+.home__blob-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .home__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home__img {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .home__blob {
+    width: 250px;
+  }
+}
+
 
 
 
