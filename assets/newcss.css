@@ -1839,6 +1839,31 @@ img {
   color: #ffffff !important;
   box-shadow: 0 4px 10px rgba(0, 86, 214, 0.3);
 }
+/* Force white text and consistent button color everywhere */
+.button,
+.about__buttons .button,
+.button--flex {
+  background-color: #0078ff !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  border: none !important;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.button i,
+.about__buttons .button i {
+  color: #ffffff !important;
+}
+
+.button:hover,
+.about__buttons .button:hover {
+  background-color: #0056d6 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 86, 214, 0.3);
+}
+
 
 
 
