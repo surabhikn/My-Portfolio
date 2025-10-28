@@ -1722,6 +1722,40 @@ img {
 .about__buttons .button:hover {
   background-color: #005fcc;
 }
+/* ================== About Section Font Consistency ================== */
+
+.about__description p,
+.about__info-title,
+.about__info-name,
+.about__buttons .button {
+  font-family: var(--body-font, 'Poppins', sans-serif);
+  color: var(--text-color, #333);
+}
+
+.about__description p {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin-bottom: 1rem;
+}
+
+.about__description strong {
+  color: var(--first-color, #0078ff);
+  font-weight: 600;
+}
+
+.about__data {
+  max-width: 600px;
+}
+
+/* Optional – makes the About text align nicely with the Home section */
+.about__container {
+  align-items: center;
+  gap: 2rem;
+}
+
 
 
 
