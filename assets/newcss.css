@@ -284,15 +284,27 @@ img {
 }
 
 .home__blob {
-  width: 200px;
+  width: 280px;
   fill: var(--first-color);
-  /* fill: hsl(69, 69%, 61%); */
 }
+
 .home__blob-img {
-  width: 180%;
-  height: 145%;
-  padding-left: 30px;
+  width: 180px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  transform: translate(40px, 20px);
 }
+@media screen and (max-width: 768px) {
+  .home__blob {
+    width: 220px;
+  }
+  .home__blob-img {
+    width: 140px;
+    transform: translate(30px, 15px);
+  }
+}
+
 .home__data {
   grid-column: 1/3;
 }
