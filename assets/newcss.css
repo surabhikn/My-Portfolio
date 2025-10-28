@@ -1473,6 +1473,147 @@ img {
     width: 250px;
   }
 }
+/* ================== HOME SECTION FIX (UPDATED) ================== */
+.home__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.home__social {
+  order: 1;
+}
+
+.home__data {
+  order: 2;
+  flex: 1;
+  min-width: 300px;
+}
+
+.home__img {
+  order: 3;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.home__blob {
+  width: 380px; /* Increased from 300px */
+  height: auto;
+}
+
+.home__blob-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .home__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home__img {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .home__blob {
+    width: 270px; /* slightly smaller on mobile */
+  }
+}
+/* ================== HOME SECTION FIX (CIRCULAR VERSION) ================== */
+.home__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.home__social {
+  order: 1;
+}
+
+.home__data {
+  order: 2;
+  flex: 1;
+  min-width: 300px;
+}
+
+.home__img {
+  order: 3;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.home__blob {
+  width: 340px; /* Increased size for better balance */
+  height: 340px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, var(--first-color-light), transparent 70%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home__blob-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scale(1.05);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .home__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home__img {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .home__blob {
+    width: 260px;
+    height: 260px;
+  }
+}
+/* ================== ABOUT SECTION FONT FIX ================== */
+.about__data,
+.about__description,
+.about__description p {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.about__description strong {
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+.about__data p {
+  margin-bottom: 1rem;
+}
+
+
 
 
 
